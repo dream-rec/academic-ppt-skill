@@ -5,10 +5,7 @@
   "author": {
     "name": "dream-rec"
   },
-  "skills": [
-    {
-      "name": "academic-ppt-style",
-      "path": "skills/academic-ppt-style"
-    }
-  ]
+  "repository": "https://github.com/dream-rec/academic-ppt-skill",
+  "license": "MIT",
+  "keywords": ["ppt", "academic", "presentation", "prompt", "image-generation"]
 }

@@ -1,0 +1,14 @@
+{
+  "name": "academic-ppt-marketplace",
+  "owner": {
+    "name": "Your Name"
+  },
+  "description": "学术风格PPT制作工具集",
+  "plugins": [
+    {
+      "name": "academic-ppt-style",
+      "source": "./plugins/academic-ppt-plugin",
+      "description": "生成红灰配色、纯白背景的学术工程风格 PPT 幻灯片图像提示词"
+    }
+  ]
+}

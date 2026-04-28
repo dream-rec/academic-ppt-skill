@@ -61,8 +61,44 @@ git clone https://github.com/dream-rec/academic-ppt-skill.git
 - 学术汇报页
 - 系统架构图
 
+## Windows 常见问题
+
+### 1) `install` 提示已安装，但 `discover` 看不到
+
+这是常见现象，`discover` 不一定展示所有 skill 型插件。  
+以以下命令结果为准：
+
+```bash
+/plugin list
+/plugin inspect academic-ppt-style
+```
+
+并直接发送需求进行触发测试。
+
+### 2) `/plugin inspect academic-ppt-style` 空内容
+
+通常是 scope 不一致或缓存旧版本导致。请用 CLI 排查并重装：
+
+```bash
+claude plugin list --json
+claude plugin uninstall academic-ppt-style@academic-ppt-marketplace --scope user
+claude plugin uninstall academic-ppt-style@academic-ppt-marketplace --scope project
+claude plugin uninstall academic-ppt-style@academic-ppt-marketplace --scope local
+claude plugin install academic-ppt-style@academic-ppt-marketplace --scope user
+```
+
+### 3) 更新仓库后本地不生效
+
+当 `plugin.json` 的 `version` 未变化时，客户端可能继续使用缓存版本。  
+建议每次发布都递增 `version`，并执行：
+
+```bash
+/plugin update academic-ppt-style@academic-ppt-marketplace
+```
+
 ## 版本历史
 
+- v1.0.1: 显式声明 skills 路径并提升插件兼容性
 - v1.0.0: 初始版本
 
 ## 许可证

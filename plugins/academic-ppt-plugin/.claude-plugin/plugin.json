@@ -1,10 +1,12 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "academic-ppt-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "生成红灰配色、纯白背景的学术工程风格 PPT 幻灯片图像提示词。适用于 Nano Banana / GPT-Image / Gemini-Image / Midjourney 等文生图模型。",
   "author": {
     "name": "dream-rec"
   },
+  "skills": "./skills/",
   "repository": "https://github.com/dream-rec/academic-ppt-skill",
   "license": "MIT",
   "keywords": ["ppt", "academic", "presentation", "prompt", "image-generation"]

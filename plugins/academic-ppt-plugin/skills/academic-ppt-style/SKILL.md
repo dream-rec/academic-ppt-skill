@@ -1,9 +1,9 @@
 ---
-name: 学术风格PPT制作
-description: 生成红灰配色、纯白背景的学术工程风格 PPT 幻灯片（SCI 期刊图 / 国家重点研发项目评审级）图像提示词。适用于 Nano Banana / GPT-Image / Gemini-Image / Midjourney 等文生图模型。当用户需要制作学术汇报页、技术路线图、成果展示页、关键科学问题页时使用。
+name: academic-ppt-style
+description: Generate structured prompts for academic engineering-style PPT slide images with red-gray palette and pure white background. Use when users ask for academic presentation pages, technical route diagrams, result showcase pages, or key scientific question slides for image-generation models.
 ---
 
-# 学术风格 PPT 制作 Skill
+# Academic PPT Style Skill
 
 本 skill 用于将用户的科研/工程汇报需求转换为**可直接用于文生图模型**的超长结构化英文提示词，产出符合 Tier‑1 学术期刊或国家重点研发项目评审风格的单张 16:9 幻灯片图像。
 
@@ -113,7 +113,7 @@ GLOBAL DESIGN SPECIFICATIONS
 ## 文件索引
 
 ```
-skill/academic-ppt-style/
+skills/academic-ppt-style/
 ├── SKILL.md                                    ← 你正在读的文件
 ├── design_specifications.md                    ← 配色、字号、版式参数（硬性规范）
 ├── ITERATION_CHECKLIST.md                      ← 常见问题自查与迭代清单

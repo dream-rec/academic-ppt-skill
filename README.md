@@ -39,7 +39,7 @@
 /plugin marketplace add dream-rec/academic-ppt-skill
 
 # 安装 plugin
-/plugin install academic-ppt-style@academic-ppt-skill
+/plugin install academic-ppt-style@academic-ppt-marketplace
 ```
 
 ### 本地安装
@@ -52,12 +52,26 @@ git clone https://github.com/dream-rec/academic-ppt-skill.git
 /plugin add /path/to/academic-ppt-skill
 ```
 
+### 安装后验证
+
+```bash
+# 查看插件是否已安装
+/plugin list
+
+# 查看该 plugin 的 skills
+/plugin inspect academic-ppt-style
+```
+
 ## 💡 使用方法
 
 安装后，可以通过以下方式使用：
 
+`academic-ppt-style` 安装完成后，直接在对话里描述需求即可触发 skill。示例：
+
 ```
-/academic-ppt-style:academic-ppt-style 帮我生成一张学术PPT的提示词
+帮我生成一张学术PPT提示词，主题是“1.1 复杂空间数据采集”，
+子标题“1.1.2 长大隧道感知方法”，使用 Template B，
+三个模块分别是：平台构成、传感协同、语义表征。
 ```
 
 或者直接描述需求：
@@ -123,8 +137,9 @@ git clone https://github.com/dream-rec/academic-ppt-skill.git
 ## 📁 项目结构
 
 ```
-academic-ppt-marketplace/
-├── marketplace.json              # marketplace 配置
+academic-ppt-skill/
+├── .claude-plugin/
+│   └── marketplace.json          # marketplace 配置
 └── plugins/
     └── academic-ppt-plugin/
         ├── .claude-plugin/

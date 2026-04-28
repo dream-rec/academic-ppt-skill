@@ -16,7 +16,7 @@
 
 ```bash
 # 添加marketplace
-/plugin marketplace add your-github-username/academic-ppt-marketplace
+/plugin marketplace add dream-rec/academic-ppt-skill
 
 # 安装plugin
 /plugin install academic-ppt-style@academic-ppt-marketplace
@@ -26,10 +26,17 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-github-username/academic-ppt-plugin.git
+git clone https://github.com/dream-rec/academic-ppt-skill.git
 
 # 在Claude Code中添加本地plugin
-/plugin add /path/to/academic-ppt-plugin
+/plugin add /path/to/academic-ppt-skill
+```
+
+### 安装后验证
+
+```bash
+/plugin list
+/plugin inspect academic-ppt-style
 ```
 
 ## 使用方法
@@ -37,7 +44,7 @@ git clone https://github.com/your-github-username/academic-ppt-plugin.git
 安装后，可以通过以下方式使用：
 
 ```
-/academic-ppt-style:academic-ppt-style 帮我生成一张学术PPT的提示词
+帮我生成一张学术PPT提示词，主题是"长大隧道多模态感知"
 ```
 
 或者直接描述需求：
@@ -64,4 +71,4 @@ MIT
 
 ## 作者
 
-Your Name
+dream-rec

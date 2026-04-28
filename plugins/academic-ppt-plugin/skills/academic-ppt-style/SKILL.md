@@ -1,11 +1,11 @@
 ---
 name: academic-ppt-style
-description: Generate structured prompts for academic engineering-style PPT slide images with red-gray palette and pure white background. Use when users ask for academic presentation pages, technical route diagrams, result showcase pages, or key scientific question slides for image-generation models.
+description: Generate structured prompts to create academic presentation-style images with a red-gray palette and pure white background. Use when users ask for academic presentation pages, technical route diagrams, result showcase pages, or key scientific question visuals for image-generation models.
 ---
 
 # Academic PPT Style Skill
 
-本 skill 用于将用户的科研/工程汇报需求转换为**可直接用于文生图模型**的超长结构化英文提示词，产出符合 Tier‑1 学术期刊或国家重点研发项目评审风格的单张 16:9 幻灯片图像。
+本 skill 用于将用户的科研/工程汇报需求转换为**可直接用于文生图模型**的超长结构化英文提示词，产出符合 Tier‑1 学术期刊或国家重点研发项目评审风格的单张 16:9 学术汇报图像。
 
 > 核心风格：**红灰双色 + 纯白背景 + 三栏模块 + 思源黑体 + 4K 分辨率**。
 > 核心产物：**一段可复制粘贴到文生图模型输入框的超长 prompt**（非 PPT 文件本身）。
@@ -68,7 +68,7 @@ description: Generate structured prompts for academic engineering-style PPT slid
 输出的 prompt 采用**三重包裹结构**：
 
 ```
-Create a highly detailed professional academic presentation slide ...
+Create a highly detailed professional academic presentation-style image ...
 
 ================================
 PAGE STRUCTURE

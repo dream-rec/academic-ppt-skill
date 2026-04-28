@@ -28,7 +28,7 @@
 ## 提示词骨架（英文主体，中文字面保留）
 
 ```text
-Create a highly detailed professional academic presentation slide in Simplified Chinese, red-gray color scheme on PURE WHITE background (#FFFFFF). Layout follows "Template A — top red banner":
+Create a highly detailed professional academic presentation-style image in Simplified Chinese, red-gray color scheme on PURE WHITE background (#FFFFFF). Layout follows "Template A — top red banner":
 
 ================================
 PAGE STRUCTURE (16:9, 3840×2160)
@@ -78,7 +78,7 @@ GLOBAL DESIGN SPECIFICATIONS
 ================================
 [复制粘贴 design_specifications.md 的关键约束]
 
-Deliverable: one single 16:9 white-background slide faithfully reproducing Template A (top red banner + red-left-bar title row + justified abstract with one red clause + three ①②③ chip-header panels + NO footer).
+Deliverable: one single 16:9 white-background image faithfully reproducing Template A (top red banner + red-left-bar title row + justified abstract with one red clause + three ①②③ chip-header panels + NO footer).
 ```
 
 ## 常见变体

@@ -25,7 +25,7 @@
 ## 3. 最终提示词（可直接复制到 Nano Banana / GPT-Image / Gemini-Image）
 
 ````text
-Create a highly detailed professional academic presentation slide in Simplified Chinese, red-gray color scheme on PURE WHITE background (#FFFFFF). Layout follows "Template B — top-left title + red-bar modules + key scientific question".
+Create a highly detailed professional academic presentation-style image in Simplified Chinese, red-gray color scheme on PURE WHITE background (#FFFFFF). Layout follows "Template B — top-left title + red-bar modules + key scientific question".
 
 NO top full-width red banner. Title area at top-left with section pills at top-right of the title line.
 Three modules use SOLID RED RECTANGULAR HEADER BARS (not rounded chips).
@@ -178,7 +178,7 @@ GLOBAL DESIGN SPECIFICATIONS
 • All Chinese must remain in simplified Chinese; math in standard italic.
 • STRICTLY AVOID: top red banner; chip-style rounded module headers; duplicated sensor callouts; cartoon styling; colored page background; emoji; page numbers; citation rows.
 
-Deliverable: one single 16:9 white-background slide matching Template B — top-left title + 多模态/单模态 pills + short intro with 2 red-bold keywords + THREE modules with SOLID RED header bars ("宇树 B2 四足平台与传感构成" · "相机 / 激光雷达 / 气体多模态协同采集" · "多模态点云-图像语义表征与数据产出") + bottom red "关键科学问题" summary line. Content: 1.1.2 长大隧道感知方法 based on Unitree B2 + ZED 2 + Livox Mid-360 + 四合一气体阵列.
+Deliverable: one single 16:9 white-background image matching Template B — top-left title + 多模态/单模态 pills + short intro with 2 red-bold keywords + THREE modules with SOLID RED header bars ("宇树 B2 四足平台与传感构成" · "相机 / 激光雷达 / 气体多模态协同采集" · "多模态点云-图像语义表征与数据产出") + bottom red "关键科学问题" summary line. Content: 1.1.2 长大隧道感知方法 based on Unitree B2 + ZED 2 + Livox Mid-360 + 四合一气体阵列.
 ````
 
 ---

@@ -103,7 +103,7 @@ Template A 与 B 都是**强约束骨架**（结构先验 → 内容填充）。
 ## 提示词骨架（自适应版）
 
 ```text
-Create a highly detailed professional academic presentation slide in Simplified Chinese, red-gray color scheme on PURE WHITE background (#FFFFFF). Layout follows "Template C — adaptive content-driven layout".
+Create a highly detailed professional academic presentation-style image in Simplified Chinese, red-gray color scheme on PURE WHITE background (#FFFFFF). Layout follows "Template C — adaptive content-driven layout".
 
 The SKELETON is fixed (title → abstract → body → closing), but the BODY layout must be chosen by the model based on the content. Use one of the following body patterns (or a composition of two):
   • C-1: N-column equal-width grid (N ∈ {2,3,4})
@@ -171,7 +171,7 @@ GLOBAL DESIGN SPECIFICATIONS
 ================================
 [复制粘贴 design_specifications.md 的关键约束。注意：pattern 切换不影响配色/字体/分辨率/语言等底层规范]
 
-Deliverable: one single 16:9 white-background slide whose body uses the chosen adaptive pattern, while keeping the fixed skeleton (title + abstract + body + closing) and the shared red-gray academic design system.
+Deliverable: one single 16:9 white-background image whose body uses the chosen adaptive pattern, while keeping the fixed skeleton (title + abstract + body + closing) and the shared red-gray academic design system.
 ```
 
 ---

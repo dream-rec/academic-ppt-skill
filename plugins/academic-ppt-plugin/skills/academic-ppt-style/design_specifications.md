@@ -137,7 +137,7 @@
 
 ````
 ```text
-Create a highly detailed professional academic presentation slide ...
+Create a highly detailed professional academic presentation-style image ...
 ================================
 PAGE STRUCTURE
 ================================

@@ -32,7 +32,7 @@
 ## 提示词骨架
 
 ```text
-Create a highly detailed professional academic presentation slide in Simplified Chinese, red-gray color scheme on PURE WHITE background (#FFFFFF). Layout follows "Template B — top-left title + red-bar modules + key scientific question":
+Create a highly detailed professional academic presentation-style image in Simplified Chinese, red-gray color scheme on PURE WHITE background (#FFFFFF). Layout follows "Template B — top-left title + red-bar modules + key scientific question":
 
 NO top full-width red banner. Title area is at top-left with section tag pills at top-right of the title line.
 Three modules use SOLID RED RECTANGULAR HEADER BARS (not rounded chips).
@@ -94,7 +94,7 @@ GLOBAL DESIGN SPECIFICATIONS
 ================================
 [复制粘贴 design_specifications.md 的关键约束]
 
-Deliverable: one single 16:9 white-background slide faithfully reproducing Template B (top-left title + right-side pills + short intro with 2–3 inline red keywords + THREE modules with SOLID RED header bars + bottom red "关键科学问题" summary line).
+Deliverable: one single 16:9 white-background image faithfully reproducing Template B (top-left title + right-side pills + short intro with 2–3 inline red keywords + THREE modules with SOLID RED header bars + bottom red "关键科学问题" summary line).
 ```
 
 ## 关键差异（相比 Template A）

@@ -119,7 +119,7 @@ Full-width emphasis strip at the bottom of a module, 14–16pt bold dark-gray te
 ## 10. 顶部标题右侧装饰条
 
 ```text
-Tiny decorative element at the very top-right corner of the slide:
+Tiny decorative element at the very top-right corner of the image:
 • A strip of 5 small squares (16×16px, 6px gap) — three red #C0392B, two light gray #BDC3C7
 • Immediately followed by a 32×32px grayscale institution-logo placeholder (thin outline only, no text)
 • Total block sits at the same vertical position as the main title baseline

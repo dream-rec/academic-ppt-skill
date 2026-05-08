@@ -1,6 +1,6 @@
-# Academic PPT Style Plugin
+# Academic PPT Style Skill
 
-生成红灰配色、纯白背景的学术工程风格 PPT 幻灯片图像提示词的 Claude Code Plugin。
+生成红灰配色、纯白背景的学术工程风格 PPT 幻灯片图像提示词。适用于 Claude Code、Codex CLI、Cursor 等 40+ AI 编程代理。
 
 ## 📖 简介
 
@@ -32,65 +32,77 @@
 
 ## 🚀 安装方法
 
-### 通过 Marketplace 安装（推荐）
+### 一键安装（推荐）
 
+通过 [Skills CLI](https://github.com/vercel-labs/skills) 一键安装，自动适配已安装的 AI 编程代理：
+
+**npx**
 ```bash
-# 添加 marketplace
-/plugin marketplace add dream-rec/academic-ppt-skill
-
-# 安装 plugin
-/plugin install academic-ppt-style@academic-ppt-marketplace
+npx skills add dream-rec/academic-ppt-skill
 ```
 
-### 本地安装
+**bunx**
+```bash
+bunx skills add dream-rec/academic-ppt-skill
+```
+
+**pnpm**
+```bash
+pnpm dlx skills add dream-rec/academic-ppt-skill
+```
+
+> 支持 40+ AI 编程代理，包括 Claude Code、Codex CLI、Cursor、OpenCode、GitHub Copilot 等。CLI 会自动检测你系统中已安装的代理并将 skill 安装到对应目录。
+
+### 手动安装
+
+<details>
+<summary>Claude Code</summary>
+
+将 skill 文件夹复制到项目级或全局目录：
 
 ```bash
-# 克隆仓库
+# 项目级（仅当前项目生效）
 git clone https://github.com/dream-rec/academic-ppt-skill.git
+cp -r academic-ppt-skill/skills/academic-ppt-style .claude/skills/
 
-# 在 Claude Code 中添加本地 plugin
-/plugin add /path/to/academic-ppt-skill
+# 全局（所有项目生效）
+cp -r academic-ppt-skill/skills/academic-ppt-style ~/.claude/skills/
 ```
 
-### 安装后验证
+</details>
+
+<details>
+<summary>Codex CLI</summary>
 
 ```bash
-# 查看插件是否已安装
-/plugin list
-
-# 查看该 plugin 的 skills
-/plugin inspect academic-ppt-style
+git clone https://github.com/dream-rec/academic-ppt-skill.git
+cp -r academic-ppt-skill/skills/academic-ppt-style ~/.codex/skills/
 ```
 
-如果你在 `list` 或 `inspect` 看不到内容，常见原因是安装在不同 scope（`user/project/local`）。可用 CLI 精确排查：
+</details>
+
+<details>
+<summary>Cursor</summary>
 
 ```bash
-claude plugin list --json
-claude plugin list --json --available
+git clone https://github.com/dream-rec/academic-ppt-skill.git
+cp -r academic-ppt-skill/skills/academic-ppt-style .cursor/skills/
 ```
 
-升级到新版本后可执行：
-
-```bash
-/plugin update academic-ppt-style@academic-ppt-marketplace
-```
+</details>
 
 ## 💡 使用方法
 
-安装后，可以通过以下方式使用：
-
-`academic-ppt-style` 安装完成后，直接在对话里描述需求即可触发 skill。示例：
-
-```
-帮我生成一张学术PPT提示词，主题是“1.1 复杂空间数据采集”，
-子标题“1.1.2 长大隧道感知方法”，使用 Template B，
-三个模块分别是：平台构成、传感协同、语义表征。
-```
-
-或者直接描述需求：
+安装后，直接用自然语言描述需求即可触发 skill：
 
 ```
 帮我生成一张红灰配色的学术风格PPT，主题是"长大隧道多模态感知"，包含三个模块：平台构成、传感协同、语义表征
+```
+
+在 Claude Code 中也可以通过 slash command 调用：
+
+```
+/academic-ppt-style:academic-ppt-style 帮我生成一张学术PPT的提示词
 ```
 
 ### 使用示例
@@ -147,73 +159,32 @@ claude plugin list --json --available
    - 适合：复杂布局需求
    - 结构：可组合的 7 种 pattern
 
-## 🪟 Windows 常见问题
-
-### 1) `install` 提示已安装，但 `discover` 看不到
-
-这是常见现象，`discover` 不一定展示所有 skill 型插件。  
-以以下命令结果为准：
-
-```bash
-/plugin list
-/plugin inspect academic-ppt-style
-```
-
-并直接发送需求进行触发测试。
-
-### 2) `/plugin inspect academic-ppt-style` 空内容
-
-通常是 scope 不一致或缓存旧版本导致。请用 CLI 排查并重装：
-
-```bash
-claude plugin list --json
-claude plugin uninstall academic-ppt-style@academic-ppt-marketplace --scope user
-claude plugin uninstall academic-ppt-style@academic-ppt-marketplace --scope project
-claude plugin uninstall academic-ppt-style@academic-ppt-marketplace --scope local
-claude plugin install academic-ppt-style@academic-ppt-marketplace --scope user
-```
-
-### 3) 更新仓库后本地不生效
-
-当 `plugin.json` 的 `version` 未变化时，客户端可能继续使用缓存版本。  
-建议每次发布都递增 `version`，并执行：
-
-```bash
-/plugin update academic-ppt-style@academic-ppt-marketplace
-```
-
 ## 📁 项目结构
 
 ```
 academic-ppt-skill/
-├── .claude-plugin/
-│   └── marketplace.json          # marketplace 配置
-└── plugins/
-    └── academic-ppt-plugin/
-        ├── .claude-plugin/
-        │   └── plugin.json       # plugin 元数据
-        ├── skills/
-        │   └── academic-ppt-style/
-        │       ├── SKILL.md                      # Skill 主文档
-        │       ├── design_specifications.md      # 设计规范
-        │       ├── ITERATION_CHECKLIST.md        # 迭代清单
-        │       ├── templates/                    # 模板文件
-        │       │   ├── template_A_top_banner.md
-        │       │   ├── template_B_top_left.md
-        │       │   └── template_C_adaptive.md
-        │       ├── fragments/                    # 可复用片段
-        │       │   ├── anti_duplication_block.md
-        │       │   ├── common_visual_blocks.md
-        │       │   ├── llm_architecture_blocks.md
-        │       │   ├── training_pipeline_blocks.md
-        │       │   ├── vlm_multimodal_blocks.md
-        │       │   ├── agent_and_memory_blocks.md
-        │       │   ├── embodied_ai_blocks.md
-        │       │   ├── evaluation_and_results_blocks.md
-        │       │   └── sensor_hardware_renderings.md
-        │       └── examples/                     # 示例
-        │           └── example_tunnel_b2_perception.md
-        └── README.md
+├── README.md
+└── skills/
+    └── academic-ppt-style/
+        ├── SKILL.md                      # Skill 主文档（触发规则 + 工作流）
+        ├── design_specifications.md      # 设计规范
+        ├── ITERATION_CHECKLIST.md        # 迭代清单
+        ├── templates/                    # 模板文件
+        │   ├── template_A_top_banner.md
+        │   ├── template_B_top_left.md
+        │   └── template_C_adaptive.md
+        ├── fragments/                    # 可复用片段
+        │   ├── anti_duplication_block.md
+        │   ├── common_visual_blocks.md
+        │   ├── llm_architecture_blocks.md
+        │   ├── training_pipeline_blocks.md
+        │   ├── vlm_multimodal_blocks.md
+        │   ├── agent_and_memory_blocks.md
+        │   ├── embodied_ai_blocks.md
+        │   ├── evaluation_and_results_blocks.md
+        │   └── sensor_hardware_renderings.md
+        └── examples/                     # 示例
+            └── example_tunnel_b2_perception.md
 ```
 
 ## 🔧 工作流程

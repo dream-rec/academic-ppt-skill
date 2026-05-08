@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add -A)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRefactor: Migrate from plugin to Skills CLI ecosystem\n\n- Restructure to standard skills/ directory for CLI auto-discovery\n- Remove .claude-plugin/ and plugins/ \\(no longer needed\\)\n- Update README with npx/bunx/pnpm one-click install commands\n- Add manual install guides for Claude Code, Codex CLI, Cursor\n- Support 40+ AI coding agents via vercel-labs/skills CLI\nEOF\n\\)\")",
+      "Bash(git rm plugins/academic-ppt-plugin/.claude-plugin/plugin.json plugins/academic-ppt-plugin/README.md)",
+      "Bash(git rebase --continue)"
+    ]
+  }
+}
